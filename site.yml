@@ -1,6 +1,10 @@
 ---
 - hosts: all
   tasks:
-  - name: install mc
+  - name: install packages
     package:
-    - name: mc
+    - name: "{{ item }}"
+    with_items:
+    - mc
+    - htop
+    - vim
