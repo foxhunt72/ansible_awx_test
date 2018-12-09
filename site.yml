@@ -3,7 +3,7 @@
   tasks:
   - name: install packages
     package:
-    - name: "{{ item }}"
+      name: "{{ item }}"
     with_items:
     - mc
     - htop
